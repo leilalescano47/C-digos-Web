@@ -1,0 +1,106 @@
+.historia-section {
+  height: 250vh;
+  position: relative;
+  background: #fff;
+  color: #000;
+  box-shadow: inset 5px -30px 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.historia-title {
+  font-family: "Gliker", sans-serif;
+  font-size: 2rem;
+  position: fixed;
+  top: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  pointer-events: none;
+  text-align: center;
+  width: 90%;
+  max-width: 800px;
+}
+
+.historia-content-wrapper {
+  position: sticky;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  padding: 0 2rem;
+  flex-wrap: nowrap;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.historia-text {
+  font-size: 1.2rem;
+  font-family: sans-serif;
+  width: 40%;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.historia-image {
+  width: 700px;
+  max-width: 100%;
+  border-radius: 1rem;
+  height: auto;
+}
+
+
+@media (max-width: 768px) {
+  .historia-section {
+    height: 300vh;
+  }
+
+  .historia-title {
+    font-size: 1.5rem;
+    top: 1rem;
+  }
+
+  .historia-content-wrapper {
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 0 1rem;
+  }
+
+  .historia-text {
+    width: 90%;
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .historia-image {
+    width: 90%;
+    height: auto;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .historia-title {
+    font-size: 1.8rem;
+  }
+
+  .historia-content-wrapper {
+    gap: 2rem;
+    padding: 0 1.5rem;
+  }
+
+  .historia-text {
+    width: 45%;
+    font-size: 1.1rem;
+  }
+
+  .historia-image {
+    width: 550px;
+  }
+}
+
+@media (min-width: 1025px) {
+
+}

@@ -1,0 +1,102 @@
+.isla-cafe-section {
+  position: relative;
+  min-height: 100vh;
+  padding: 80px 20px;
+  overflow: hidden;
+}
+
+.background-layer {
+  position: absolute;
+  inset: 0;
+  background-image: url("https://i.imgur.com/kwNjXbn.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: brightness(0.7);
+  z-index: 0;
+}
+
+.text-container {
+  max-width: 600px;
+  margin: 0 auto 60px auto;
+  text-align: center;
+  z-index: 2;
+  position: relative;
+}
+
+.text-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 16px;
+  font-family: "Gliker";
+  color: #fff;
+}
+
+.text-container p {
+  font-size: 1.1rem;
+  color: #ffffff;
+  font-family: sans-serif;
+}
+
+.polaroid {
+  position: absolute;
+  width: 200px;
+  background: white;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 40px;
+}
+
+.polaroid img {
+  width: 100%;
+  object-fit: cover;
+  border: 4px solid white;
+}
+
+.ver-mas-btn {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #00000079;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.ver-mas-btn:hover {
+  background-color: #333333d6;
+}
+
+.polaroid-1 {
+  transform: rotate(-8deg);
+}
+
+.polaroid-2 {
+  transform: rotate(5deg);
+}
+
+.polaroid-3 {
+  transform: rotate(-5deg);
+}
+
+@media (max-width: 768px) {
+  .polaroid {
+    width: 150px;
+  }
+
+  .text-container h1 {
+    font-size: 1.8rem;
+  }
+
+  .text-container p {
+    font-size: 1rem;
+  }
+
+  .ver-mas-btn {
+    font-size: 0.8rem;
+    padding: 6px 12px;
+  }
+}
